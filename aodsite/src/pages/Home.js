@@ -3,7 +3,7 @@ function Home({ setActivePage }) {
     {
       icon: '🕹️',
       title: 'FAST-PACED ACTION',
-      desc: 'Intense, wave-based gameplay that keeps players engaged and coming back for more. Easy to learn, hard to master.',
+      desc: 'Tactical, turn-based gameplay that keeps players engaged and coming back for more. Easy to learn, hard to master.',
     },
     {
       icon: '🖥️',
@@ -30,9 +30,7 @@ function Home({ setActivePage }) {
             <span className="highlight">DESTRUCTION</span>
           </h1>
           <p className="hero-subtitle">
-            The ultimate arcade cabinet experience. Fight waves of alien invaders
-            in this pulse-pounding shoot-em-up built for arcades, bars, and
-            entertainment venues everywhere.
+            The ultimate arcade experience. Battle against your friends head-to-head or in teams in this strategic, turn-based artillery shooter.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => setActivePage('Contact')}>

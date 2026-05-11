@@ -1,10 +1,10 @@
 const screenshots = [
-  'Stage 1 — Invasion Begins',
-  'Stage 3 — Asteroid Field',
-  'Stage 5 — Boss Battle',
-  'Multiplayer Mode',
+  'Hat Select Screen',
+  'Destruction',
+  'Grappling',
+  'Moon Gravity',
+  'Animals',
   'High Score Screen',
-  'Game Over Screen',
 ];
 
 const cabinetPhotos = [

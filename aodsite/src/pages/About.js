@@ -30,15 +30,14 @@ function About({ setActivePage }) {
             <div className="about-text">
               <h2>The Game</h2>
               <p>
-                Aliens of Destruction (AOD) is a fast-paced vertical shoot-em-up
-                arcade game that puts players in the cockpit of humanity's last
-                line of defense against an overwhelming alien invasion.
+                Aliens of Destruction (AOD) is a turn-based artillery shooter
+                arcade game that pits players against each other for brutal, punchy
+                alien combat.
               </p>
               <p>
-                Fight through dozens of unique stages, each with escalating
-                challenges, enemy formations, and spectacular boss encounters.
-                Collect power-ups, upgrade your ship, and compete for the highest
-                score on the global leaderboard.
+                Fight across many unique stages, each with its own mechanic to master.
+                Collect airdrop weapons, destroy terrain, avoid the shrinking map boundaries, 
+                and outshoot your opponent across the universe.
               </p>
               <p>
                 With intuitive controls and a difficulty curve designed for arcade
@@ -81,7 +80,7 @@ function About({ setActivePage }) {
               Developer Photo / Logo
             </div>
             <div className="about-text">
-              <h2>About the Developer</h2>
+              <h2>About the Creators</h2>
               <p>
                 [Developer name/company] is an independent game studio and
                 arcade manufacturer dedicated to creating authentic arcade

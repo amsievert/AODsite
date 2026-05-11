@@ -622,10 +622,8 @@
 }
 
 .spec-value {
-  font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 2px;
   color: var(--text-primary);
 }
 
