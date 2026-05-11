@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Anklepants';
+  src: url('./fonts/Anklepants.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary:    #0a0a14;
+  --bg-secondary:  #12122a;
+  --bg-card:       #16162e;
+  --accent-red:    #e63946;
+  --accent-red-dk: #c1121f;
+  --accent-cyan:   #00c9ff;
+  --text-primary:  #ffffff;
+  --text-muted:    #94a3b8;
+  --border:        rgba(255, 255, 255, 0.08);
+  --nav-height:    70px;
+  --max-width:     1200px;
+  --font-heading:  'Anklepants', monospace;
+  --font-body:     'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+img   { max-width: 100%; display: block; }
+ul, ol { list-style: none; }
+a     { text-decoration: none; color: inherit; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
