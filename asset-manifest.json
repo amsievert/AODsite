@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AODsite/static/css/main.d81ff29b.css",
-    "main.js": "/AODsite/static/js/main.426b57ab.js",
+    "main.css": "/AODsite/static/css/main.aa441fd3.css",
+    "main.js": "/AODsite/static/js/main.15a08a9f.js",
     "static/js/453.d1cabc7c.chunk.js": "/AODsite/static/js/453.d1cabc7c.chunk.js",
     "static/media/Anklepants.otf": "/AODsite/static/media/Anklepants.95a3bf6de9763659ef05.otf",
     "index.html": "/AODsite/index.html",
-    "main.d81ff29b.css.map": "/AODsite/static/css/main.d81ff29b.css.map",
-    "main.426b57ab.js.map": "/AODsite/static/js/main.426b57ab.js.map",
+    "main.aa441fd3.css.map": "/AODsite/static/css/main.aa441fd3.css.map",
+    "main.15a08a9f.js.map": "/AODsite/static/js/main.15a08a9f.js.map",
     "453.d1cabc7c.chunk.js.map": "/AODsite/static/js/453.d1cabc7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d81ff29b.css",
-    "static/js/main.426b57ab.js"
+    "static/css/main.aa441fd3.css",
+    "static/js/main.15a08a9f.js"
   ]
 }
