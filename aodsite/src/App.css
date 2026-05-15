@@ -683,6 +683,62 @@
   flex-shrink: 0;
 }
 
+.credits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.credit-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.25s;
+}
+
+.credit-item:hover {
+  border-color: rgba(230, 57, 70, 0.4);
+}
+
+.credit-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.credit-role {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  letter-spacing: 0.4px;
+}
+
+.credit-bio {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+.credit-link {
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  margin-top: 4px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.credit-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .cabinet-callout {
   max-width: 620px;
   margin: 0 auto;

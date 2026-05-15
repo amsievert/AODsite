@@ -1,6 +1,37 @@
 import imgGravity from '../images/aod_gravity.png';
 import imgDevs from '../images/aod_devs.jpeg';
 
+const credits = [
+  {
+    name: 'Hilton Jones',
+    role: 'Game Designer',
+    bio: 'Ruleset designer for Texas Chainsaw Massacre and Evil Dead pinball machines.',
+  },
+  {
+    name: 'Alex Sievert',
+    role: 'Game Developer and Artist',
+    bio: 'Indie game developer and recent graduate of UW-Madison.',
+    url: 'https://alexsievert.com',
+  },
+  {
+    name: 'Ben Heck',
+    role: 'Consulting & Callouts',
+    bio: 'Game developer and ruleset designer for Americas Most Haunted, Texas Chainsaw Massacre, and Evil Dead pinball machines.',
+    url: 'https://benheck.com',
+  },
+  {
+    name: 'Jean Baudin',
+    role: 'Soundtrack Composer',
+    bio: 'Solo bassist and video game sound master.',
+    url: 'https://jeanbaudin.com',
+  },
+  {
+    name: 'Brandon Burn',
+    role: 'Cabinet Art',
+    bio: '',
+  },
+];
+
 const highlights = [
   'Precision‑cut, heavy‑duty construction',
   'Commercial‑grade joysticks and buttons',
@@ -70,12 +101,20 @@ function About({ setActivePage }) {
             <img src={imgDevs} alt="The developers" className="about-img" />
             <div className="about-text">
               <h2>About the Creators</h2>
-              <p>
-                Game Design by Hilton Jones
-              </p>
-              <p>
-                Programming and Art by Alex Sievert
-              </p>
+              <ul className="credits-list">
+                {credits.map(({ name, role, bio, url }) => (
+                  <li key={name} className="credit-item">
+                    <span className="credit-name">{name}</span>
+                    <span className="credit-role">{role}</span>
+                    {bio && <span className="credit-bio">{bio}</span>}
+                    {url && (
+                      <a href={url} className="credit-link" target="_blank" rel="noreferrer">
+                        {url.replace(/^https?:\/\//, '')}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
               <div style={{ marginTop: '28px' }}>
                 <button
                   className="btn btn-primary"

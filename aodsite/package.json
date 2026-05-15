@@ -1,6 +1,6 @@
 {
   "name": "aodsite",
-  "homepage": "http://amsievert.github.io/AODsite",
+  "homepage": "https://aodarcade.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/amsievert/AODsite.git"
   },
   "eslintConfig": {
     "extends": [
