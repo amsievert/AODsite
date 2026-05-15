@@ -1,16 +1,29 @@
 {
   "files": {
-    "main.css": "/AODsite/static/css/main.aa441fd3.css",
-    "main.js": "/AODsite/static/js/main.15a08a9f.js",
+    "main.css": "/AODsite/static/css/main.46376a4b.css",
+    "main.js": "/AODsite/static/js/main.f7e6aa3d.js",
     "static/js/453.d1cabc7c.chunk.js": "/AODsite/static/js/453.d1cabc7c.chunk.js",
+    "static/media/AOD-4 Edited.png": "/AODsite/static/media/AOD-4 Edited.26019518852757c9d6d9.png",
+    "static/media/AOD-7 Edited.png": "/AODsite/static/media/AOD-7 Edited.9e495ac6bfeffb58edfc.png",
+    "static/media/AOD-1 Edited.png": "/AODsite/static/media/AOD-1 Edited.9c617042eac3413a9ad1.png",
+    "static/media/AOD-1 Cropped.png": "/AODsite/static/media/AOD-1 Cropped.a3c98f241725429f5986.png",
+    "static/media/aod_devs.jpeg": "/AODsite/static/media/aod_devs.2d468eb4104b864cf680.jpeg",
+    "static/media/aod_award.jpeg": "/AODsite/static/media/aod_award.3fb9250226073fff1cc7.jpeg",
+    "static/media/aod_venue_cropped.jpg": "/AODsite/static/media/aod_venue_cropped.2036b9cc5c2b7db97e32.jpg",
+    "static/media/aod_highscore.png": "/AODsite/static/media/aod_highscore.70587882133b8b6f2fcf.png",
+    "static/media/aod_charselect.png": "/AODsite/static/media/aod_charselect.806614879febccf006ba.png",
+    "static/media/aod_grapple.png": "/AODsite/static/media/aod_grapple.6a7d0fa4eb983c9bd421.png",
+    "static/media/aod_destruction.png": "/AODsite/static/media/aod_destruction.a14071ff275ac7cb604d.png",
+    "static/media/aod_animals.png": "/AODsite/static/media/aod_animals.f5157ff7668cb963f8d8.png",
+    "static/media/aod_gravity.png": "/AODsite/static/media/aod_gravity.5b12a2a23c10bdd3c460.png",
     "static/media/Anklepants.otf": "/AODsite/static/media/Anklepants.95a3bf6de9763659ef05.otf",
     "index.html": "/AODsite/index.html",
-    "main.aa441fd3.css.map": "/AODsite/static/css/main.aa441fd3.css.map",
-    "main.15a08a9f.js.map": "/AODsite/static/js/main.15a08a9f.js.map",
+    "main.46376a4b.css.map": "/AODsite/static/css/main.46376a4b.css.map",
+    "main.f7e6aa3d.js.map": "/AODsite/static/js/main.f7e6aa3d.js.map",
     "453.d1cabc7c.chunk.js.map": "/AODsite/static/js/453.d1cabc7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa441fd3.css",
-    "static/js/main.15a08a9f.js"
+    "static/css/main.46376a4b.css",
+    "static/js/main.f7e6aa3d.js"
   ]
 }
