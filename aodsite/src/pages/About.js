@@ -1,16 +1,13 @@
-const specs = [
-  { label: 'Display', value: '27" LCD' },
-  { label: 'Resolution', value: '1920 × 1080' },
-  { label: 'Controls', value: 'Joystick + 6 Buttons' },
-  { label: 'Players', value: '1–2 Players' },
-  { label: 'Cabinet Height', value: '72"' },
-  { label: 'Cabinet Width', value: '28"' },
-  { label: 'Cabinet Depth', value: '34"' },
-  { label: 'Weight', value: '~280 lbs' },
-  { label: 'Power', value: '110V / 60Hz' },
-  { label: 'Audio', value: 'Stereo 2.1 Speakers' },
-  { label: 'LED Lighting', value: 'Full RGB Marquee' },
-  { label: 'Warranty', value: '1 Year Parts & Labor' },
+import imgGravity from '../images/aod_gravity.png';
+import imgDevs from '../images/aod_devs.jpeg';
+
+const highlights = [
+  'Precision‑cut, heavy‑duty construction',
+  'Commercial‑grade joysticks and buttons',
+  'High‑resolution display',
+  'Custom artwork and accents',
+  'Smooth, responsive controls',
+  'Built and assembled in limited batches',
 ];
 
 function About({ setActivePage }) {
@@ -30,24 +27,22 @@ function About({ setActivePage }) {
             <div className="about-text">
               <h2>The Game</h2>
               <p>
-                Aliens of Destruction (AOD) is a turn-based artillery shooter
-                arcade game that pits players against each other for brutal, punchy
-                alien combat.
+                Aliens of Destruction is a brand‑new, handcrafted 2‑player arcade experience 
+                that blends strategic combat, physics‑based destruction, and over‑the‑top alien 
+                firepower.
+              </p>
+              <p>
+                Designed for players who love competitive battles will enjoying a beverage,
+                this cabinet delivers a modern twist on classic artillery‑style gameplay,
+                all inside a premium, collector‑grade arcade machine.
               </p>
               <p>
                 Fight across many unique stages, each with its own mechanic to master.
                 Collect airdrop weapons, destroy terrain, avoid the shrinking map boundaries, 
-                and outshoot your opponent across the universe.
-              </p>
-              <p>
-                With intuitive controls and a difficulty curve designed for arcade
-                play, AOD is immediately accessible to newcomers while offering
-                the depth that keeps seasoned players coming back.
+                and outshoot your opponents.
               </p>
             </div>
-            <div className="about-image-placeholder">
-              Gameplay Screenshot
-            </div>
+            <img src={imgGravity} alt="Gameplay screenshot" className="about-img" />
           </div>
         </div>
       </section>
@@ -56,19 +51,15 @@ function About({ setActivePage }) {
         <div className="container">
           <div className="section-header">
             <span className="section-label">Hardware</span>
-            <h2 className="section-title">Cabinet Specifications</h2>
-            <p className="section-subtitle">
-              Built to commercial arcade standards with premium components
-              designed to handle years of heavy play.
-            </p>
+            <h2 className="section-title">Cabinet Highlights</h2>
           </div>
-          <div className="specs-grid">
-            {specs.map(({ label, value }) => (
-              <div className="spec-card" key={label}>
-                <div className="spec-label">{label}</div>
-                <div className="spec-value">{value}</div>
-              </div>
+          <ul className="highlights-list">
+            {highlights.map(item => (
+              <li key={item} className="highlight-item">{item}</li>
             ))}
+          </ul>
+          <div className="cabinet-callout">
+            Every cabinet is individually numbered #1–100, making each one a true collector's piece.
           </div>
         </div>
       </section>
@@ -76,21 +67,14 @@ function About({ setActivePage }) {
       <section className="about-section">
         <div className="container">
           <div className="about-split">
-            <div className="about-image-placeholder">
-              Developer Photo / Logo
-            </div>
+            <img src={imgDevs} alt="The developers" className="about-img" />
             <div className="about-text">
               <h2>About the Creators</h2>
               <p>
-                [Developer name/company] is an independent game studio and
-                arcade manufacturer dedicated to creating authentic arcade
-                experiences for the modern age.
+                Game Design by Hilton Jones
               </p>
               <p>
-                Founded by a team of arcade enthusiasts and engineers, our
-                mission is to bring the joy of classic arcade gaming to venues
-                everywhere — with the quality and reliability that operators
-                expect.
+                Programming and Art by Alex Sievert
               </p>
               <div style={{ marginTop: '28px' }}>
                 <button

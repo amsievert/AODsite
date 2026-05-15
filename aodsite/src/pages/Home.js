@@ -1,36 +1,53 @@
+import aodCabinetSide from '../images/AOD-4 Edited.png';
+import aodCabinetFront from '../images/AOD-1 Cropped.png';
+import imgDestruction from '../images/aod_destruction.png';
+import imgAward from '../images/aod_award.jpeg';
+import imgVenue from '../images/aod_venue_cropped.jpg';
+
 function Home({ setActivePage }) {
   const features = [
     {
-      icon: '🕹️',
-      title: 'FAST-PACED ACTION',
-      desc: 'Tactical, turn-based gameplay that keeps players engaged and coming back for more. Easy to learn, hard to master.',
+      title: '2-Player Competitive Gameplay',
+      desc: 'Face off in fast, strategic matches that reward skill and creativity.',
     },
     {
-      icon: '🖥️',
-      title: 'AUTHENTIC HARDWARE',
-      desc: 'High-quality arcade cabinet with a crystal-clear display, precision controls, and robust construction built to last.',
+      title: 'Fully Destructible Terrain',
+      desc: 'Every blast changes the battlefield, opening new angles and new tactics.',
     },
     {
-      icon: '🏆',
-      title: 'COMPETITION READY',
-      desc: 'Built-in leaderboard and scoring system lets players compete for the top spot and keeps your venue buzzing.',
+      title: 'Unique Alien Characters',
+      desc: 'Each alien brings its own personality, animations, and arsenal. Plus hats ... yes you get to wear hats!',
     },
+    {
+      title: 'Modern Retro Aesthetic',
+      desc: 'Bright, bold pixel-inspired visuals with smooth modern effects.',
+    },
+    {
+      title: 'Endless Replayability',
+      desc: 'No two matches play the same thanks to dynamic terrain and weapon variety.'
+    }
   ];
 
-  const galleryItems = ['Gameplay', 'Cabinet', 'Action Shot', 'Venue'];
+  const galleryItems = [
+    { label: 'Gameplay', img: imgDestruction },
+    { label: 'Cabinet', img: aodCabinetFront },
+    { label: 'Action Shot', img: imgAward },
+    { label: 'Venue',       img: imgVenue },
+  ];
 
   return (
     <main>
       <section className="hero">
         <div className="hero-bg-glow" />
         <div className="hero-content">
-          <span className="hero-tag">Now Available</span>
+          <span className="hero-tag">Limited Edition</span>
           <h1 className="hero-title">
             ALIENS OF<br />
             <span className="highlight">DESTRUCTION</span>
           </h1>
           <p className="hero-subtitle">
-            The ultimate arcade experience. Battle against your friends head-to-head or in teams in this strategic, turn-based artillery shooter.
+            A handcrafted 2-player arcade cabinet built for strategic, physics-based combat with a modern twist on classic artillery gameplay, 
+            best enjoyed with a drink in hand.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => setActivePage('Contact')}>
@@ -42,10 +59,7 @@ function Home({ setActivePage }) {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="cabinet-placeholder">
-            <div className="cabinet-placeholder-icon">👾</div>
-            <span className="cabinet-placeholder-text">CABINET IMAGE</span>
-          </div>
+          <img src={aodCabinetSide} alt="Aliens of Destruction arcade cabinet" className="hero-cabinet-img" />
         </div>
       </section>
 
@@ -53,15 +67,15 @@ function Home({ setActivePage }) {
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why AOD?</span>
-            <h2 className="section-title">Built for the Arcade Experience</h2>
+            <h2 className="section-title">Destroy the Terrain. Defeat Your Opponent.</h2>
             <p className="section-subtitle">
-              Everything you need to bring the thrill of classic arcade gaming to your venue.
+              Aliens of Destruction drops two players into a fully destructible battlefield where every shot reshapes the terrain. Choose your alien, explore the maps,
+              and outsmart your opponents with precision, timing, and creative chaos.
             </p>
           </div>
           <div className="features-grid">
-            {features.map(({ icon, title, desc }) => (
+            {features.map(({ title, desc }) => (
               <div className="feature-card" key={title}>
-                <div className="feature-icon">{icon}</div>
                 <h3 className="feature-title">{title}</h3>
                 <p className="feature-desc">{desc}</p>
               </div>
@@ -77,9 +91,12 @@ function Home({ setActivePage }) {
             <h2 className="section-title">See It in Action</h2>
           </div>
           <div className="gallery-grid">
-            {galleryItems.map(label => (
+            {galleryItems.map(({ label, img }) => (
               <div className="gallery-item" key={label}>
-                <span className="gallery-item-label">{label}</span>
+                {img
+                  ? <img src={img} alt={label} className="gallery-item-img" />
+                  : <span className="gallery-item-label">{label}</span>
+                }
               </div>
             ))}
           </div>
@@ -94,10 +111,10 @@ function Home({ setActivePage }) {
       <section className="cta-banner">
         <h2 className="cta-title">Ready to Bring the Arcade Home?</h2>
         <p className="cta-subtitle">
-          Contact us today to learn about pricing, delivery, and setup for your venue.
+          Only 100 cabinets will ever be produced. Once they are gone, they are gone forever.
         </p>
         <button className="btn btn-primary" onClick={() => setActivePage('Contact')}>
-          Get in Touch
+          Get yours now
         </button>
       </section>
     </main>

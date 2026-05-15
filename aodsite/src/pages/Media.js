@@ -1,16 +1,26 @@
+import aodCabinetSide1 from '../images/AOD-4 Edited.png';
+import aodCabinetSide2 from '../images/AOD-7 Edited.png';
+import aodCabinetFront from '../images/AOD-1 Edited.png';
+import imgCharSelect  from '../images/aod_charselect.png';
+import imgDestruction from '../images/aod_destruction.png';
+import imgGrapple     from '../images/aod_grapple.png';
+import imgGravity     from '../images/aod_gravity.png';
+import imgAnimals     from '../images/aod_animals.png';
+import imgHighScore   from '../images/aod_highscore.png';
+
 const screenshots = [
-  'Hat Select Screen',
-  'Destruction',
-  'Grappling',
-  'Moon Gravity',
-  'Animals',
-  'High Score Screen',
+  { label: 'Hat Select Screen', img: imgCharSelect },
+  { label: 'Destruction',       img: imgDestruction },
+  { label: 'Grappling',         img: imgGrapple },
+  { label: 'Moon Gravity',      img: imgGravity },
+  { label: 'Animals',           img: imgAnimals },
+  { label: 'High Score Screen', img: imgHighScore },
 ];
 
 const cabinetPhotos = [
-  'Front View',
-  'Side Profile',
-  '3/4 Angle',
+  { label: 'Front View',    img: aodCabinetFront },
+  { label: 'Side Profile',  img: aodCabinetSide1 },
+  { label: '3/4 Angle',     img: aodCabinetSide2 },
 ];
 
 function Media() {
@@ -31,9 +41,9 @@ function Media() {
             <h2 className="section-title">Screenshots</h2>
           </div>
           <div className="screenshots-grid">
-            {screenshots.map(label => (
+            {screenshots.map(({ label, img }) => (
               <div className="screenshot-item" key={label}>
-                <span>{label}</span>
+                <img src={img} alt={label} className="screenshot-img" />
               </div>
             ))}
           </div>
@@ -46,10 +56,10 @@ function Media() {
             <span className="section-label">Hardware</span>
             <h2 className="section-title">Cabinet Photos</h2>
           </div>
-          <div className="screenshots-grid">
-            {cabinetPhotos.map(label => (
+          <div className="screenshots-grid screenshots-grid--portrait">
+            {cabinetPhotos.map(({ label, img }) => (
               <div className="screenshot-item" key={label}>
-                <span>{label}</span>
+                <img src={img} alt={label} className="screenshot-img" />
               </div>
             ))}
           </div>
@@ -62,9 +72,13 @@ function Media() {
             <span className="section-label">Trailer</span>
             <h2 className="section-title">Watch the Gameplay Trailer</h2>
           </div>
-          <div className="video-placeholder">
-            <div className="video-play-icon">▶</div>
-            <p>Gameplay Trailer — Coming Soon</p>
+          <div className="video-embed-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/cQ__OOQvWK8"
+              title="Aliens of Destruction Gameplay Trailer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
